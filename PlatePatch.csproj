@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1.2.0\EffectHelpers_Patch.cs" />
     <Compile Include="1.2.0\ApplianceComponentHelpers_Patch.cs" />
     <Compile Include="1.2.0\ItemComponentHelpers_Patch.cs" />
     <Compile Include="Main.cs" />
@@ -51,6 +52,9 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Yariazen.PlateUp.ModBuildUtilities.1.10.21\build\Yariazen.PlateUp.ModBuildUtilities.targets" Condition="Exists('..\packages\Yariazen.PlateUp.ModBuildUtilities.1.10.21\build\Yariazen.PlateUp.ModBuildUtilities.targets')" />

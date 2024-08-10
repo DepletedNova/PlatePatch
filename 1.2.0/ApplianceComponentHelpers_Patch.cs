@@ -8,7 +8,7 @@ using Unity.Entities;
 namespace KitchenPlatePatch._120
 {
     /*
-     * Thanks to IcedMilo for creating the patch
+     * Thanks to IcedMilo for creating the patch itself
      */
 
     [HarmonyPatch]
@@ -22,10 +22,11 @@ namespace KitchenPlatePatch._120
         [HarmonyPriority(int.MinValue)]
         static bool ApplianceComponentSetDynamic_Prefix(bool __runOriginal, EntityContext ctx, Entity e, IApplianceProperty component)
         {
-            if (!__runOriginal ||
-                !(component is IModComponent))
+            if (!__runOriginal || (component is IAttachmentLogic))
                 return true;
+
             ctx.Set(e, (dynamic)component);
+
             return false;
         }
     }
