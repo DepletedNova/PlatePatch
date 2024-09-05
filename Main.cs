@@ -13,7 +13,7 @@ namespace KitchenPlatePatch
     {
         public const string MOD_GUID = "DepletedNova.PlatePatch";
         public const string MOD_NAME = "PlatePatch";
-        public const string MOD_VERSION = "1.0.3";
+        public const string MOD_VERSION = "1.0.4";
         public const string GAME_VERSION = "1.2.0";
 
         public Main()

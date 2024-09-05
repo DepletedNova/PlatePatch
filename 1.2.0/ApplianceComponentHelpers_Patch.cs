@@ -19,7 +19,7 @@ namespace KitchenPlatePatch._120
             AccessTools.FirstMethod(typeof(ApplianceComponentHelpers), method => method.Name.Contains("SetDynamic") && method.IsGenericMethod).MakeGenericMethod(typeof(IApplianceProperty));
 
         [HarmonyPrefix]
-        [HarmonyPriority(int.MinValue)]
+        [HarmonyPriority(int.MinValue + 100)]
         static bool ApplianceComponentSetDynamic_Prefix(bool __runOriginal, EntityContext ctx, Entity e, IApplianceProperty component)
         {
             if (!__runOriginal || (component is IAttachmentLogic))

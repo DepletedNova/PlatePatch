@@ -28,7 +28,7 @@ namespace KitchenPlatePatch._120
 
         [HarmonyPatch(nameof(EffectHelpers.AddApplianceEffectComponents))]
         [HarmonyPrefix]
-        [HarmonyPriority(int.MinValue)]
+        [HarmonyPriority(int.MinValue + 100)]
         static bool AddApplianceEffectComponents_Prefix(bool __runOriginal, EntityCommandBuffer ecb, Entity e, IEffectPropertySource prop)
         {
             if (!__runOriginal || prop.EffectType == null || prop.EffectRange == null)

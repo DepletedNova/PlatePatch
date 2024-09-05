@@ -19,7 +19,7 @@ namespace KitchenPlatePatch._120
             AccessTools.FirstMethod(typeof(ItemComponentHelpers), method => method.Name.Contains("SetDynamic") && method.IsGenericMethod).MakeGenericMethod(typeof(IComponentData));
 
         [HarmonyPrefix]
-        [HarmonyPriority(int.MinValue)]
+        [HarmonyPriority(int.MinValue + 100)]
         static bool ItemComponentSetDynamic_Prefix(bool __runOriginal, EntityContext ctx, Entity e, IComponentData component)
         {
             if (!__runOriginal)
