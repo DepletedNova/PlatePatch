@@ -1,11 +1,6 @@
 ﻿using HarmonyLib;
 using KitchenMods;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KitchenPlatePatch
 {
@@ -13,7 +8,7 @@ namespace KitchenPlatePatch
     {
         public const string MOD_GUID = "DepletedNova.PlatePatch";
         public const string MOD_NAME = "PlatePatch";
-        public const string MOD_VERSION = "1.0.4";
+        public const string MOD_VERSION = "1.0.5";
         public const string GAME_VERSION = "1.2.0";
 
         public Main()

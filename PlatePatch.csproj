@@ -46,6 +46,7 @@
     <Compile Include="1.2.0\EffectHelpers_Patch.cs" />
     <Compile Include="1.2.0\ApplianceComponentHelpers_Patch.cs" />
     <Compile Include="1.2.0\ItemComponentHelpers_Patch.cs" />
+    <Compile Include="1.2.0\IViewDataFormatterPatches.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
